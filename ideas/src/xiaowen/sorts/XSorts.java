@@ -19,20 +19,25 @@ public class XSorts {
 
     public static void main(String[] args) {
         int[] array = new int[10];
-
-        for (int i = 0; i < 10; i++) {
-            array[i] = 110 - i;
-        }
-        for (int j = 0; j < array.length; j++) {
-            System.out.println(array[j]);
-        }
-
-        XSorts s = new XSorts();
-        s.sort(array);
+        array[1] = 100;
+        int b = array[1];
+        b = 1;
+        System.out.println(array[1]);
 
 
-        for (int j = 0; j < array.length; j++) {
-            System.out.println(array[j]);
-        }
+//        for (int i = 0; i < 10; i++) {
+//            array[i] = 110 - i;
+//        }
+//        for (int j = 0; j < array.length; j++) {
+//            System.out.println(array[j]);
+//        }
+//
+//        XSorts s = new XSorts();
+//        s.sort(array);
+//
+//
+//        for (int j = 0; j < array.length; j++) {
+//            System.out.println(array[j]);
+//        }
     }
 }
