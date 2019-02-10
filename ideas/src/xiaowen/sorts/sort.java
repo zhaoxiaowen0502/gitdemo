@@ -2,7 +2,6 @@ package xiaowen.sorts;
 
 public class sort {
 
-
     public void sortt(int b[]) {
        for(int i=0;i<b.length-1;i++){
            int minIndex = i;
