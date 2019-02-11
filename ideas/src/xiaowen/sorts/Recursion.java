@@ -1,25 +1,30 @@
 package xiaowen.sorts;
 
 public class Recursion {
-    public static int f(int x) {
-        if (0 == x) {
+
+    //递归方法求阶乘   fact(n):  n=0,fact(0)=1;  n>0,fact(n)=n*fact(n-1);
+    public static int fact(int n) {
+        if (0 == n ) {
             return 1;
         }
-        return x * f(x - 1);
+        return n * fact(n - 1);
+
     }
 
-    public int jiecheng(int n){
-        int s=1;
-        for(int x=1;x<=n;x++){
-            s=s*x;
+    public int factorial(int n) {
+        int p = 1;
+        for (int x = 1; x <= n; x++) {
+            p = p * x;
         }
-        return s;
+        return p;
     }
 
     public static void main(String[] args) {
-        Recursion r=new Recursion();
-        System.out.println(Recursion.f(5));
-        System.out.println(r.jiecheng(5));
+
+        System.out.println(Recursion.fact(3));
+
+        Recursion r = new Recursion();
+        System.out.println(r.factorial(5));
     }
 
 }

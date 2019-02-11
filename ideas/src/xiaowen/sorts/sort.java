@@ -1,7 +1,7 @@
 package xiaowen.sorts;
 
 public class sort {
-    public void sortt(int b[]) {
+    public void sortt(int[] b) {
         for (int i = 0; i < b.length - 1; i++) {
             int minIndex = i;
             for (int j = i + 1; j < b.length; j++) {
@@ -31,23 +31,27 @@ public class sort {
     }
 
     public static void main(String[] args) {
-        int arraySize = 1000000;
-        int array[] = new int[arraySize];
+        int arraySize = 100;
+        int[] array = new int[arraySize];
 
         for (int i = 0; i < arraySize; i++) {
             array[i] = (int) (Math.random() * arraySize);
         }
-        sort s = new sort();
-//        long start = System.currentTimeMillis();
-//        s.sorts(array);
-//        long end = System.currentTimeMillis();
-//        System.out.println((end - start) / 1000);
-
-        int a[] = {2, 5, 6, 1, 7, 4};
-        s.sortt(a);
-        for (int i = 0; i < a.length; i++) {
-            System.out.println(a[i]);
+        for (int i = 0; i < 10; i++) {
+            System.out.println(array[i]);
         }
 
+        sort s = new sort();
+        //long start = System.currentTimeMillis();
+        s.sorts(array);
+        //QuickSorts.sort(array, 0, array.length - 1);
+        //long end = System.currentTimeMillis();
+        //System.out.println("时间"+(end - start) / 1000);
+
+        System.out.println("\n");
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println(array[i]);
+        }
     }
 }
