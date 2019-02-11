@@ -37,8 +37,8 @@ public class Test1 {
     public static void main(String[] args) {
         int[] array = {8, 5, 3, 9, 2};
         Test1.quicksort(array, 0, array.length - 1);
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
+        for (int j = 0; j < array.length; j++) {
+            System.out.println(array[j]);
         }
 
     }
